@@ -1,7 +1,7 @@
 # Alex Felipe Barbosa 
 # 04/03/2024
 
-3# Projeto 1 - Desenvolvimento de Game em Linguagem Python - Versão 1
+# Projeto 1 - Desenvolvimento de Game em Linguagem Python - Versão 1
 
 # Import 
 import random
@@ -64,3 +64,17 @@ def game():
     else:
       chances -=1
       letras_erradas.append(tentativa)
+      
+    # Condicional 
+    if "_" not in letras_descobertas:
+      print("\nVocê venceu, a palavra era: ", palavra)
+      break
+    
+  # Condicional 
+  if "_" in letras_descobertas:
+    print("\nVocê perdeu, a palavra era: ", palavra) 
+    
+# Bloco main 
+if __name__ == "__main__":
+  game()
+  print("\nParabéns! Você esta aprendendo programação em Python com a DSA. : \n")
